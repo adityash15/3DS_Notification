@@ -18,6 +18,11 @@ app.post('/api/final', async function (req, res) {
   res.send({message: "complete"})
 });
 
+app.post('/response', async function (req, res) {
+  console.log('inside final portion--------------', req.body);
+  res.send({message: "complete"})
+});
+
 // // Start the server
 app.listen(3000, () => {
   console.log('Server is listening on port 3000');
